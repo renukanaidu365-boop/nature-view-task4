@@ -1,0 +1,147 @@
+/* RESET & BORDER */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #1a2f1f;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* MAIN CONTAINER */
+.content-container {
+  /* 25% spacing from left and right */
+  width: 50vw;
+  
+  /* 10% spacing from top and bottom */
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  
+  /* Auto margins for horizontal centering */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Box sizing to keep dimensions exact */
+  box-sizing: border-box;
+
+}
+
+/* Tools and Help text */
+.tools-help {
+  text-align: right;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.5px;
+}
+
+.tools {
+  margin-right: 25px;
+  font-weight: 500;
+}
+
+.help {
+  font-weight: 500;
+}
+
+/* VIEW CARD */
+.view-card {
+  display: block;
+  width: 100%;
+  
+  /* Background */
+  background: rgba(30, 40, 35, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 40px;
+  padding: 25px 25px 35px 25px;
+  
+  /* Border effect  */
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 30px 40px -15px rgba(0, 0, 0, 0.7);
+}
+
+/* NATURE IMAGE */
+.nature-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  
+  /* Rounded corners */
+  border-radius: 30px;
+  
+  /* Frame effect */
+  border: 4px solid rgba(255, 255, 255, 0.35);
+  box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.6);
+  
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+
+/* GRADIENT BUTTON */
+.gradient-btn {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 20px auto 0 auto;
+  
+  /* Gradient background */
+  background: linear-gradient(145deg, #ff7e5f, #feb47b, #ff8a5c);
+  border: none;
+  border-radius: 50px;
+  padding: 18px 30px;
+  
+  /* Font settings */
+  font-family: 'Poppins', 'Montserrat', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  
+  /* Effects */
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.6), 0 0 0 3px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(145deg, #ff8e6f, #ffc08b, #ff9a6c);
+  box-shadow: 0 20px 30px -5px rgba(0, 0, 0, 0.7), 0 0 0 5px rgba(255, 255, 255, 0.6);
+}
+/* Ensure nothing causes scroll */
+img, button, div, body, html {
+  max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-container {
+    width: 70vw;
+  }
+  
+  .gradient-btn {
+    font-size: 1.6rem;
+    padding: 15px 25px;
+  }
+  
+  .tools-help {
+    font-size: 1rem;
+  }
+}
