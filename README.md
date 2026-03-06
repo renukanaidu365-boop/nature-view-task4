@@ -1,37 +1,28 @@
 # Nature View Card - Task 4
 
-## About This Project
-This is my fourth task. I made a card with a nature image and a "Click Me" button. The main rule was to use only viewport units (vw and vh) for spacing - no pixels, no flexbox, no positioning!
-
 ## What I Learned
-Viewport Units
-vw = % of screen width (1vw = 1% of width)
-vh = % of screen height (1vh = 1% of height)
-I used width: 50vw so card takes half the screen
-margin: 10vh auto gives 10% space top/bottom and centers it
+This task was about using viewport units (vw and vh) for spacing.
+
+## My Mistake (Using AI)
+I tried to make my code look too fancy. I used backdrop-filter, aspect-ratio, and transform effects that I don't fully understand yet. My mentor noticed it looked too professional for a beginner. Now I'm rewriting everything simply so I actually learn. so after that i changed this README>md too.
 
 ## What Was Hard
-Getting the card centered without flexbox was confusing at first. Then I remembered margin: auto works great for block elements! The "Tools" and "Help" text in the top-right also took some tries to position right.
-
-## What I Figured Out
-Block elements stack naturally (no flex needed)
-auto margins are really useful for centering
-Gradient buttons look cool with hover effects
-backdrop-filter: blur() gives that modern glass look
+I didn't understand why width:50vw gives 25% space on each side. My mentor explained that 50vw takes half the screen, so the remaining 50% is split equally as 25% on left and right.
 
 ## How to Run
-Download both index.html and style.css files
-Put them in the same folder
-Double-click index.html to open in browser
-Resize the window to see how it responds
-Hover over the button to see the animation
+Download index.html and style.css
 
-## Time I Spent
-Started: 2:00 PM
-Finished: 3:30 PM
-Total: About 1.5 hours (most time was figuring out the spacing)
+## Put them in same folder
+Double-click index.html to open
+Resize window to see spacing change
+
+## Time Spent
+Started: 5:30 PM
+Finished: 6:00 PM
+Total: 30 
 
 ## Files
 index.html
 style.css
 README.md
+
